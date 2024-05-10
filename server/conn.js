@@ -8,4 +8,15 @@ const connection = mongoose.connect(mongouri).then(()=>{
     console.log("Error has occures \n ",error);
 })
 
+
+
+// const conn = async(req,res)=<{
+//     await mongoose.connect(mongouri).then(()=>{
+
+//     }).catch((error)=>{
+
+//     })
+// }
+// conn();
+
 module.exports = connection

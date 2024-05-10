@@ -9,6 +9,28 @@ const PostWorkout = async (req, res) => {
       reps,
       loads,
     });
+    // const newBook = {
+    //   title: req.body.title,
+    //   author: req.body.author,
+    //   publishYear: req.body.publishYear,
+    // };
+    // const book = await Book.create(newBook);
+
+
+
+// using old save method
+
+    // const workout = new WorkoutModel({
+    //   title,
+    //   reps,
+    //   loads,
+    // })
+    // workout.save().then(()=>{
+    //   res.status(200).json({
+    //     status: "Workout added succesfully",
+    //     content: workout,
+    //   });
+    // })
     return res.status(200).json({
       status: "Workout added succesfully",
       content: workout,
